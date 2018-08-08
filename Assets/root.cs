@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 
 public class root : MonoBehaviour {
 
@@ -11,6 +12,17 @@ public class root : MonoBehaviour {
 	public void CreateQuote() {
       StartCoroutine(CreateQuoteCoroutine());
   }
+
+public TextMesh instruction;
+ void Start () {
+
+    instruction.text = "Hello";
+
+
+
+
+ }
+
 
   IEnumerator CreateQuoteCoroutine() {
       List<IMultipartFormSection> formData = new List<IMultipartFormSection>();
